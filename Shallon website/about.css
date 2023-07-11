@@ -1,0 +1,310 @@
+:root {
+  --first: #090621;
+  --second: #100d2a;
+  --third: #171336;
+  --paragraph: rgba(224, 222, 241, 0.8);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10px;
+}
+
+p {
+  color: var(--paragraph);
+}
+
+img {
+  max-width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  align-items: center;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: var(--third);
+  color: white;
+
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a {
+  padding: 3px 10px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #46416e;
+
+}
+
+
+a:hover {
+  color: red;
+}
+
+a:active {
+  color: yellow;
+}
+
+.navlinks {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  list-style: none;
+}
+
+.btn {
+  padding: 5px 8px;
+  border-radius: 15px;
+  border: none;
+  background-color: white;
+  color: var(--first);
+}
+
+.btn:hover {
+  background-color: var(--first);
+  cursor: pointer;
+  transition: .1s;
+  border-style: solid;
+  border-width: 2px;
+  color: white;
+  border-color: white;
+
+}
+
+.personal {
+  padding: 30px;
+  background-color: var(--first);
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+.lists {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 25px 0;
+}
+
+ul {
+  list-style: none;
+  line-height: 3;
+  background-color: var(--second);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+li {
+  display: flex;
+  gap: 2rem;
+
+}
+
+.personal-range {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  margin: 90px 0;
+}
+
+.experience,
+.complete,
+.customers,
+.awards {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--second);
+
+}
+
+.experience h2 {
+  margin-bottom: 15px;
+}
+
+.complete,
+.customers,
+.awards,
+.expe {
+  display: flex;
+  gap: 1rem;
+}
+
+.personal .btn {
+
+  margin: auto;
+}
+
+.btn-cv {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  width: 50%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: white;
+  color: var(--first);
+}
+
+.btn-cv:hover {
+  background-color: var(--first);
+  cursor: pointer;
+  transition: .1s;
+  border-style: solid;
+  border-width: 2px;
+  color: white;
+  border-color: white;
+
+}
+
+section {
+
+  padding: 50px 30px;
+  background-color: var(--third);
+  color: white;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+}
+
+
+.html,
+.js,
+.css,
+.jquery,
+.php,
+.angular,
+.data-analysis,
+.cyber-security,
+.itil {
+  margin-top: 20px;
+}
+
+.html p,
+.js p,
+.css p,
+.jquery p,
+.php p,
+.angular p,
+.data-analysis p,
+.cyber-security p,
+.itil p {
+  margin: 20px;
+}
+
+.htm,
+.j,
+.cs,
+.jq,
+.ph,
+.ang,
+.da,
+.sec,
+.it {
+  padding: 28px;
+  height: 5rem;
+  width: 5rem;
+  text-align: center;
+  border-radius: 40px;
+  border-width: .2rem;
+  border-style: solid;
+  border-color: rgb(165, 113, 15);
+  background-color: var(--second);
+}
+
+.expe-ed {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 100px 30px;
+
+  text-align: center;
+  background-color: var(--first);
+  color: white;
+}
+
+
+
+.ed,
+.exp {
+  padding: 20px;
+  border-radius: 10px;
+  line-height: 2;
+  background-color: var(--second);
+}
+
+footer {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 30px;
+  justify-content: space-between;
+  background-color: var(--first);
+
+}
+
+.footer-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (min-width:760px) {
+  .lists {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    margin: 50px;
+  }
+
+  .personal-range {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    padding: 40px;
+  }
+
+
+}
+
+@media (min-width:1024px) {
+  .personal-range {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 3rem;
+  }
+
+  .expe-ed {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
